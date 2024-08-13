@@ -1,3 +1,4 @@
+from django.utils import gettext_lazy as _
 from django.db import models
 
 
@@ -8,8 +9,8 @@ class Gallery(models.Model):
 
     class Meta:
         db_table = "gallery"
-        verbose_name = "gallery"
-        verbose_name_plural = "galleries"
+        verbose_name = _("gallery  ")
+        verbose_name_plural = _("galleries")
 
     def __str__(self):
         return f"{self.name}"
