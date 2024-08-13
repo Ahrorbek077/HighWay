@@ -9,7 +9,7 @@ class Gallery(models.Model):
 
     class Meta:
         db_table = "gallery"
-        verbose_name = _("gallery  ")
+        verbose_name = _("gallery")
         verbose_name_plural = _("galleries")
 
     def __str__(self):
