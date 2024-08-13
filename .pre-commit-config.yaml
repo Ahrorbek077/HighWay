@@ -1,5 +1,5 @@
 default_language_version:
-    python: python3.11.9
+    python: python3.10.11
 exclude: 'docs|node_modules|migrations|.git|.tox'
 default_stages: [pre-commit, pre-push]
 fail_fast: false
