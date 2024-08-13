@@ -1,6 +1,9 @@
-from django.http import HttpResponse
+from django.views.generic import View
 from django.shortcuts import render
 
 
-def home(request):
-    return HttpResponse("Hello from HOME")
+class HomeView(View):
+    def get(self, request):
+        return render(request, "index.html")
+
+
